@@ -15,4 +15,14 @@
       border: 0.1rem solid var(--tag-#{$name}-border);
     }
   }
+
+  &__text {
+    @media (max-width: $breakpoint-md) {
+      display: none;
+
+      details[open] & {
+        display: inline;
+      }
+    }
+  }
 }
